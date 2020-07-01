@@ -8,7 +8,7 @@ This package provides typekits for the messages distributed by
 
 Any contribution to this repository is appreciated, whether they are new features, bug fixes,
 improved documentation or just questions. However, it is recommended to first discuss the change
-you wish to make via a [GitHub issue](https://github.com/orocos/rtt_ros2_common_inerfaces/issues).
+you wish to make via a [GitHub issue](https://github.com/orocos/rtt_ros2_common_interfaces/issues).
 
 Any contribution that you make to this repository will
 be under the Apache 2 License, as dictated by that

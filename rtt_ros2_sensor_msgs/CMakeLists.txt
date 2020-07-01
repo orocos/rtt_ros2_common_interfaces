@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(rtt_ros2_geometry_msgs CXX)
+project(rtt_ros2_sensor_msgs CXX)
 
 # Default to C99
 if(NOT CMAKE_C_STANDARD)
@@ -20,7 +20,7 @@ find_package(ament_cmake REQUIRED)
 find_package(rtt_ros2_idl REQUIRED)
 
 # generate typekit
-rtt_ros2_generate_typekit(geometry_msgs DEPENDENCIES rtt_ros2_std_msgs)
+rtt_ros2_generate_typekit(sensor_msgs)
 
 # linters
 if(BUILD_TESTING)
