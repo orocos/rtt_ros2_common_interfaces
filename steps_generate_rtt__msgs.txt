@@ -1,0 +1,22 @@
+
+# Description
+
+This file describes the procedure to create a new rtt_ros2_mypkg_msgs package
+that contains the typekits for a given ROS2 message package
+
+0. Input: mypkg_msgs (a ROS2 created message package)
+
+1. Copy the from rtt_ros2_std_msgs (template) to rtt_ros2_mypkg_msgs
+2. Check dependencies of mypkg_msgs
+3. Change:
+  a) package.xml
+    i: <depend>mypkg_msgs</depend>
+    ii: N-deps x <depend>deppkg_msgs</depend> (optional? not needed since it is in the deps of mypkg_msgs)
+    iii: <description>RTT typekit and transport plugins for mypkg_msgs</description>
+    iv: <name>rtt_ros2_mypkg_msgs</name>
+  b) CMakeLists.txt
+    i: project(rtt_ros2_mypkg_msgs CXX)
+    ii: N-deps x find_package(rtt_ros2_deppkg_msgs REQUIRED) (Not Needed - _rtt_ros2_generate_typekit() finds them already)
+    iii: rtt_ros2_generate_typekit(mypkg_msgs)
+
+
