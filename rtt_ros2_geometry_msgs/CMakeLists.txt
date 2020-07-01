@@ -21,7 +21,7 @@ find_package(rtt_ros2_idl REQUIRED)
 find_package(rtt_ros2_std_msgs REQUIRED)
 
 # generate typekit
-rtt_ros2_generate_typekit(std_msgs)
+rtt_ros2_generate_typekit(geometry_msgs)
 
 # linters
 if(BUILD_TESTING)

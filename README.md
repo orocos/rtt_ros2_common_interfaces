@@ -1,5 +1,5 @@
 
-# Orocos RTT typekit for `common_ineterfaces`
+# Orocos RTT typekit for `common_interfaces`
 
 This package provides typekits for the messages distributed by
 [`common_interfaces`](https://github.com/ros2/common_interfaces) ROS 2 package.
