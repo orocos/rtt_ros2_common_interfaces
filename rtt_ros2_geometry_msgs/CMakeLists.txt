@@ -20,7 +20,7 @@ find_package(ament_cmake REQUIRED)
 find_package(rtt_ros2_idl REQUIRED)
 
 # generate typekit
-rtt_ros2_generate_typekit(geometry_msgs DEPENDENCIES rtt_ros2_std_msgs)
+rtt_ros2_generate_typekit(geometry_msgs)
 
 # linters
 if(BUILD_TESTING)
