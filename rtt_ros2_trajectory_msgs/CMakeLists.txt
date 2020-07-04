@@ -17,12 +17,12 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
-find_package(rtt_ros2_idl REQUIRED)
+find_package(rtt_ros2_interfaces REQUIRED)
 # find_package(rtt_ros2_geometry_msgs REQUIRED)
 # find_package(rtt_ros2_std_msgs REQUIRED)
 
-# generate typekit
-rtt_ros2_generate_typekit(trajectory_msgs)
+# generate typekit and transport plugins
+rtt_ros2_generate_typekit_and_transports(trajectory_msgs)
 
 # linters
 if(BUILD_TESTING)
@@ -38,5 +38,5 @@ ament_package()
 # ament_export_interfaces() or ament_export_targets() when building with
 # ament_cmake.
 orocos_generate_package(
-  DEPENDS_TARGETS rtt_ros2_idl
+  DEPENDS_TARGETS rtt_ros2_interfaces
 )
