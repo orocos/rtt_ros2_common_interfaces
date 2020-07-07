@@ -18,7 +18,6 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rtt_ros2_interfaces REQUIRED)
-# find_package(rtt_ros2_geometry_msgs REQUIRED)
 
 # generate typekit and transport plugins
 rtt_ros2_generate_typekit_and_transports(shape_msgs)
