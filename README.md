@@ -1,8 +1,9 @@
+# Orocos RTT typekits for `common_interfaces`
 
-# Orocos RTT typekit for `common_interfaces`
+[![Build Status](https://travis-ci.org/orocos/rtt_ros2_common_interfaces.svg?branch=master)](https://travis-ci.org/orocos/rtt_ros2_common_interfaces)
 
-This package provides typekits for the messages distributed by
-[`common_interfaces`](https://github.com/ros2/common_interfaces) ROS 2 package.
+This repository provides typekits for the messages and service packages that are part of the
+[`common_interfaces`](https://github.com/ros2/common_interfaces) set.
 
 ## Contributing
 
