@@ -20,7 +20,7 @@ find_package(ament_cmake REQUIRED)
 find_package(rtt_ros2_interfaces REQUIRED)
 
 # generate typekit and transport plugins
-rtt_ros2_generate_typekit_and_transports(trajectory_msgs)
+rtt_ros2_generate_interfaces_plugins(trajectory_msgs)
 
 # linters
 if(BUILD_TESTING)
