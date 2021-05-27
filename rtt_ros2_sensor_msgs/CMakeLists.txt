@@ -17,10 +17,10 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
-find_package(rtt_ros2_idl REQUIRED)
+find_package(rtt_ros2_interfaces REQUIRED)
 
 # generate typekit
-rtt_ros2_generate_typekit(sensor_msgs)
+rtt_ros2_generate_interfaces_plugins(sensor_msgs)
 
 # linters
 if(BUILD_TESTING)
