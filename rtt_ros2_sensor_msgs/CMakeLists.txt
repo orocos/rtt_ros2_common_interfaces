@@ -19,7 +19,7 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rtt_ros2_interfaces REQUIRED)
 
-# generate typekit
+# generate typekit and transport plugins
 rtt_ros2_generate_interfaces_plugins(sensor_msgs)
 
 # linters
@@ -36,5 +36,5 @@ ament_package()
 # ament_export_interfaces() or ament_export_targets() when building with
 # ament_cmake.
 orocos_generate_package(
-  DEPENDS_TARGETS rtt_ros2_idl
+  DEPENDS_TARGETS rtt_ros2_interfaces
 )
